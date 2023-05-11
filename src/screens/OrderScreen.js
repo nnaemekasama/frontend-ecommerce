@@ -28,7 +28,7 @@ const OrderScreen = () => {
 
 
     const orderPay = useSelector(state => state.orderPay)
-    const { loading:loadingPay, success:successPay  } = orderPay
+    const { loading:loadingPay,   } = orderPay
 
     const userLogin = useSelector(state => state.userLogin)
     const { userInfo  } = userLogin

@@ -12,7 +12,6 @@ import Paginate from '../components/Paginate'
 
 export const ProductListScreen = () => {
     let { pageNumber } = useParams() || 1;
-    let params = useParams()
     const dispatch = useDispatch()
     const navigate = useNavigate()
 

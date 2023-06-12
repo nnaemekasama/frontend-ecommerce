@@ -30,7 +30,7 @@ export const listProducts =
       dispatch({ type: PRODUCT_LIST_REQUEST });
 
       const { data } = await axios.get(
-        `https://backend-store-nnaemeka.onrender.com/api/api/products?pageNumber=${pageNumber}&keyword=${keyword}`
+        `https://bintus-commerce.onrender.com/api/api/api/products?pageNumber=${pageNumber}&keyword=${keyword}`
       );
 
       dispatch({
@@ -53,7 +53,7 @@ export const listProductDetails = (id) => async (dispatch) => {
     dispatch({ type: PRODUCT_DETAILS_REQUEST });
 
     const { data } = await axios.get(
-      `https://backend-store-nnaemeka.onrender.com/api/api/products/${id}`
+      `https://bintus-commerce.onrender.com/api/api/api/products/${id}`
     );
 
     dispatch({
@@ -88,7 +88,7 @@ export const deleteProduct = (id) => async (dispatch, getState) => {
     };
 
     await axios.delete(
-      `https://backend-store-nnaemeka.onrender.com/api/api/products/${id}`,
+      `https://bintus-commerce.onrender.com/api/api/api/products/${id}`,
       config
     );
 
@@ -123,7 +123,7 @@ export const createProduct = () => async (dispatch, getState) => {
     };
 
     const { data } = await axios.post(
-      `https://backend-store-nnaemeka.onrender.com/api/api/products`,
+      `https://bintus-commerce.onrender.com/api/api/api/products`,
       {},
       config
     );
@@ -161,7 +161,7 @@ export const updateProduct = (product) => async (dispatch, getState) => {
     };
 
     const { data } = await axios.put(
-      `https://backend-store-nnaemeka.onrender.com/api/api/products/${product._id}`,
+      `https://bintus-commerce.onrender.com/api/api/api/products/${product._id}`,
       product,
       config
     );
@@ -201,7 +201,7 @@ export const reviewProduct =
       };
 
       await axios.post(
-        `https://backend-store-nnaemeka.onrender.com/api/api/products/${productId}/reviews`,
+        `https://bintus-commerce.onrender.com/api/api/api/products/${productId}/reviews`,
         review,
         config
       );
@@ -224,7 +224,7 @@ export const listTopProducts = () => async (dispatch) => {
   try {
     dispatch({ type: PRODUCT_TOP__REQUEST });
     const { data } = await axios.get(
-      `https://backend-store-nnaemeka.onrender.com/api/api/products/top`
+      `https://bintus-commerce.onrender.com/api/api/api/products/top`
     );
     dispatch({
       type: PRODUCT_TOP__SUCCESS,

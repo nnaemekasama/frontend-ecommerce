@@ -68,7 +68,7 @@ const ProductEditScreen = () => {
       };
 
       const { data } = await axios.post(
-        "https://bintus-commerce.onrender.com/api/upload",
+        "https://backend-store-nnaemeka.onrender.com/api/upload",
         formData,
         config
       );

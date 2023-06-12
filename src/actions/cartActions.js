@@ -8,7 +8,7 @@ import {
 
 export const addToCart = (id, qty) => async (dispatch, getState) => {
   const { data } = await axios.get(
-    `https://bintus-commerce.onrender.com/api/products/${id}`
+    `https://backend-store-nnaemeka.onrender.com/api/products/${id}`
   );
 
   dispatch({

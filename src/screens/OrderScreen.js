@@ -88,7 +88,7 @@ const OrderScreen = () => {
         console.log(res);
         axios
           .post(
-            "https://bintus-commerce.onrender.com/api/api/api/orders/pay",
+            "https://bintus-commerce.onrender.com/api/orders/pay",
             body,
             config
           )

@@ -43,7 +43,6 @@ h3 {
     top: 0;
     display: flex;
     justify-content: center;
-    border: 1px solid red;
     
   }
   .carousel-caption h2 {
